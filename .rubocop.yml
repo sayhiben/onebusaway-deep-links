@@ -1,0 +1,21 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+# Checks for single/double quote rules. Who cares?
+Style/StringLiterals:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*.rb
+
+Metrics/MethodLength:
+  Max: 25
+  Exclude:
+    - spec/**/*.rb
+
+Style/NumericLiterals:
+  Enabled: false

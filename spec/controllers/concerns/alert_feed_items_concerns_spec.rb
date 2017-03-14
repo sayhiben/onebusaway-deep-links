@@ -10,7 +10,7 @@ RSpec.describe AlertFeedItemsConcerns, type: :controller do
   describe '.condition_filters' do
     it 'should not filter by published_at when a `since` parameter is not provided' do
       controller = FakeController.new
-      conditions = controller.condition_filters()
+      conditions = controller.condition_filters
       expect(conditions).to eql({})
     end
 
